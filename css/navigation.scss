@@ -1,0 +1,67 @@
+$color-blue: #3461E2;
+$color-blue-fade: #E5EAFB;
+$whitesmoke: #F6F9FE;
+$tex-color: #3D3D3D;
+$border-radius: 100px;
+
+//nav bar
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.657);
+    padding-right: 20px;
+    border-radius: 100px;
+    position: relative;
+    height: 10vh;
+    z-index: 2;
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-weight: bold;
+
+        .logo {
+            max-width: 60px;
+        }
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .active {
+            color: $color-blue;
+            text-decoration: underline;
+        }
+    }
+}
+
+//Mobile
+
+@media screen and (max-width: 540px) {
+    .navbar {
+        height: 100px;
+        padding-right: 0;
+        .nav-menu {
+            flex-direction: column;
+            display: none;
+        }
+    
+        .menu-bar {
+            display: block;
+            img {
+                width: 40px;
+                align-self: flex-end;
+            }
+        }
+    }
+
+}
