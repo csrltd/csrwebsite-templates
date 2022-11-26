@@ -1,6 +1,7 @@
 .hero {
-  position: relative;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 .hero::after {
   content: url("/img/hero image.png");
@@ -275,8 +276,13 @@
 }
 
 @media screen and (max-width: 540px) {
+  .hero {
+    overflow: unset;
+    height: auto;
+    padding-top: 300px;
+  }
   .hero::after {
-    right: -400px;
+    right: -600px;
   }
   .hero .container {
     gap: 50px;
@@ -296,7 +302,7 @@
   }
   .hero .container .social-proof .proof {
     font-size: 16px;
-    width: 48%;
+    width: 100%;
   }
   .hero .container .social-proof .proof .icon {
     width: 29px;

@@ -50,6 +50,15 @@ $border-radius: 100px;
     .navbar {
         height: 100px;
         padding-right: 0;
+        
+        .brand {
+            .logo {
+                max-width: 40px;
+            }
+            .site-title {
+                font-size: 16px;
+            }
+        }
         .nav-menu {
             flex-direction: column;
             display: none;
@@ -58,7 +67,7 @@ $border-radius: 100px;
         .menu-bar {
             display: block;
             img {
-                width: 40px;
+                width: 30px;
                 align-self: flex-end;
             }
         }

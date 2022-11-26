@@ -37,6 +37,12 @@
     height: 100px;
     padding-right: 0;
   }
+  .navbar .brand .logo {
+    max-width: 40px;
+  }
+  .navbar .brand .site-title {
+    font-size: 16px;
+  }
   .navbar .nav-menu {
     flex-direction: column;
     display: none;
@@ -45,7 +51,7 @@
     display: block;
   }
   .navbar .menu-bar img {
-    width: 40px;
+    width: 30px;
     align-self: flex-end;
   }
 }/*# sourceMappingURL=navigation.css.map */
