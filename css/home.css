@@ -339,6 +339,10 @@
   }
   .services-section .container .services .service {
     max-width: 100%;
+    padding: 20px;
+  }
+  .services-section .container .services .service .serive-title img {
+    max-width: 32px;
   }
   .call-to-actiom {
     padding: 50px 20px;
