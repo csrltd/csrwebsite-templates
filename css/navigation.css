@@ -22,6 +22,9 @@
 .navbar .menu-bar {
   display: none;
 }
+.navbar .close-menu {
+  display: none;
+}
 .navbar .nav-menu {
   display: flex;
   align-items: center;
@@ -64,8 +67,5 @@
   .navbar .menu-bar img, .navbar .close-menu img {
     width: 30px;
     align-self: flex-end;
-  }
-  .navbar .close-menu {
-    display: none;
   }
 }/*# sourceMappingURL=navigation.css.map */
