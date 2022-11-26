@@ -1,14 +1,14 @@
 function OpenCloseMenu() {
     const menu = document.getElementById("nav-menu");
-    const menuBtn = document.getElementById("menuBtn")
-    const CloseMenuBtn = document.getElementById("CloseMenuBtn")
+    const OpenMenu = document.getElementById("OpenMenu")
+    const CloseMenu = document.getElementById("CloseMenu")
     if (menu.style.display === "none") {
         menu.style.display = "flex"
-        menuBtn.style.display= "none"
-        CloseMenuBtn.style.display= "block"
+        OpenMenu.style.display= "none"
+        CloseMenu.style.display= "block"
     } else {
         menu.style.display = "none"
-        menuBtn.style.display = "block"
-        CloseMenuBtn.style.display = "none"
+        OpenMenu.style.display = "block"
+        CloseMenu.style.display = "none"
     }
 }

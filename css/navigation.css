@@ -61,10 +61,13 @@
     height: 100vh;
     display: none;
   }
-  .navbar .menu-bar, .navbar .close-menu {
+  .navbar .menu-bar {
     display: block;
   }
-  .navbar .menu-bar img, .navbar .close-menu img {
+  .navbar .menu-bar #CloseMenu {
+    display: none;
+  }
+  .navbar .menu-bar img {
     width: 30px;
     align-self: flex-end;
   }
