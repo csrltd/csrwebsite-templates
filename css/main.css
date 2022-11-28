@@ -158,6 +158,11 @@ footer .container .site-map .social-media-icons {
   gap: 15px;
 }
 
+.active-menu {
+  text-decoration: underline;
+  color: #3461E2;
+}
+
 @media screen and (max-width: 540px) {
   .container {
     padding: 0 20px;
