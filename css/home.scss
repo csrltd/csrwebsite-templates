@@ -7,21 +7,21 @@ $border-radius: 100px;
 .hero {
     overflow: hidden;
     position: relative;
+    margin-top: -112px;
     z-index: 0;
     &::after {
         content: url('/img/hero\ image.png');
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 0;
         bottom: 0;
     }
     .container {
-        height: 90vh;
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: end;
-        gap: 200px;
+        gap: 150px;
         .intro {
             display: flex;
             flex-direction: column;
@@ -114,24 +114,29 @@ $border-radius: 100px;
             justify-content: space-between;
             row-gap: 20px;
 
-            .service {
-                max-width: 380px;
-                background-color: $whitesmoke;
-                padding: 30px;
-                border-radius: 20px;
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-                transition: linear 0.3s;
-                &:hover {
-                    background-color: $color-blue-fade;
-                }
-                .serive-title {
+            a {
+                .service {
+                    max-width: 380px;
+                    background-color: $whitesmoke;
+                    padding: 30px;
+                    border-radius: 20px;
                     display: flex;
-                    align-items: center;
+                    flex-direction: column;
                     gap: 15px;
-                    img {
-                        max-width: 60px;
+                    height: 300px;
+                    transition: linear 0.3s;
+                    &:hover {
+                        background-color: $color-blue-fade;
+                    }
+                    .serive-title {
+                        display: flex;
+                        align-items: center;
+                        gap: 15px;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            object-fit: contain;
+                        }
                     }
                 }
             }
@@ -184,6 +189,7 @@ $border-radius: 100px;
                     height: 300px;
                     object-fit: cover;
                     border-radius: 20px;
+                    border: 1px solid whitesmoke;
                 }
                 .desc {
                     display: flex;
@@ -241,6 +247,7 @@ $border-radius: 100px;
         .contacts {
             display: flex;
             gap: 50px;
+            justify-content: space-between;
             .addresses {
                 width: 50%;
                 display: flex;
@@ -379,7 +386,7 @@ $border-radius: 100px;
         height: auto;
         padding-top: 300px;
         &::after {
-            right: -600px;
+            right: -400px;
         }
         .container {
             gap: 50px;
