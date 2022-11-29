@@ -6,6 +6,10 @@
   z-index: 2;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #3D3D3D;

@@ -12,6 +12,9 @@ $border-radius: 100px;
     box-sizing: border-box;
     z-index: 2;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Lato', sans-serif;
