@@ -35,6 +35,7 @@ $border-radius: 100px;
                 .youtube {
                     display: flex;
                     gap: 15px;
+                    cursor: pointer;
                     .play-btn {
                         max-width: 38px;
                     }
@@ -64,6 +65,35 @@ $border-radius: 100px;
             .active {
                 background-color: $color-blue;
                 color: white;
+            }
+        }
+    }
+
+    .pop-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 20vh;
+        bottom: 10vh;
+        right: 0;
+        left: 0;
+        display: none;
+
+        .pop-up-video {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 100%;
+            .close-pop-up {
+                cursor: pointer;
+                img {
+                    background-color: white;
+                    height: 44px;
+                    padding: 10px;
+                    border-radius: 34px;
+                }
             }
         }
     }
@@ -224,6 +254,7 @@ $border-radius: 100px;
         flex-direction: column;
         gap: 30px;
         .partners-logos {
+            width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;

@@ -31,6 +31,7 @@
 .hero .container .intro .buttons .youtube {
   display: flex;
   gap: 15px;
+  cursor: pointer;
 }
 .hero .container .intro .buttons .youtube .play-btn {
   max-width: 38px;
@@ -58,6 +59,33 @@
 .hero .container .social-proof .active {
   background-color: #3461E2;
   color: white;
+}
+.hero .pop-up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20vh;
+  bottom: 10vh;
+  right: 0;
+  left: 0;
+  display: none;
+}
+.hero .pop-up .pop-up-video {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.hero .pop-up .pop-up-video .close-pop-up {
+  cursor: pointer;
+}
+.hero .pop-up .pop-up-video .close-pop-up img {
+  background-color: white;
+  height: 44px;
+  padding: 10px;
+  border-radius: 34px;
 }
 
 .why {
@@ -206,6 +234,7 @@
   gap: 30px;
 }
 .partners .container .partners-logos {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
