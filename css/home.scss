@@ -2,7 +2,7 @@ $color-blue: #3461E2;
 $color-blue-fade: #E5EAFB;
 $whitesmoke: #F6F9FE;
 $tex-color: #3D3D3D;
-$border-radius: 100px;
+$border-radius: 10px;
 
 .hero {
     padding-top: 50px;
@@ -91,7 +91,7 @@ $border-radius: 100px;
     .container {
         padding: 50px;
         background-color: $whitesmoke;
-        border-radius: 50px;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
         gap: 30px;
@@ -105,7 +105,7 @@ $border-radius: 100px;
             .why-image {
                 width: 50%;
                 img {
-                    border-radius: 50px;
+                    border-radius: 20px;
                 }
             }
         }

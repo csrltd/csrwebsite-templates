@@ -85,7 +85,7 @@
 .why .container {
   padding: 50px;
   background-color: #F6F9FE;
-  border-radius: 50px;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -102,7 +102,7 @@
   width: 50%;
 }
 .why .container .why-section .why-image img {
-  border-radius: 50px;
+  border-radius: 20px;
 }
 .why .container .inverse {
   flex-direction: row-reverse;
