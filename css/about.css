@@ -49,4 +49,21 @@
 }
 .description .container .col .col-1 p {
   padding-top: 20px;
+}
+
+.mission .container {
+  padding-top: 50px;
+}
+.mission .container .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.mission .container .col .row {
+  width: 274px;
+  height: 196px;
+}
+.mission .container .col .row .icon {
+  width: 50px;
+  height: 50px;
 }/*# sourceMappingURL=about.css.map */
