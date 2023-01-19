@@ -28,4 +28,25 @@
 }
 .hero .container h1 {
   text-transform: capitalize;
+}
+
+.description .container {
+  padding-top: 100px;
+}
+.description .container .col {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.description .container .col .col-1 {
+  background-color: #f6f9fe;
+  padding: 30px;
+  border-radius: 10px;
+}
+.description .container .col .col-1 h1 {
+  font-weight: bolder;
+  font-size: 25px;
+}
+.description .container .col .col-1 p {
+  padding-top: 20px;
 }/*# sourceMappingURL=about.css.map */
