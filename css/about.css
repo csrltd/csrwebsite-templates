@@ -1,0 +1,31 @@
+.hero {
+  background-image: url("/img/partners/about-bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -880px;
+  height: 80vh;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 250px;
+  padding-left: 200px;
+  width: 506px;
+  color: #f6f9fe;
+}
+.hero .container a {
+  color: #f6f9fe;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero .container .title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero .container h1 {
+  text-transform: capitalize;
+}/*# sourceMappingURL=about.css.map */

@@ -4,25 +4,6 @@ $whitesmoke: #f6f9fe;
 $tex-color: #3d3d3d;
 $border-radius: 10px;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    z-index: 2;
-}
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    color: $tex-color;
-    font-size: 18px;
-    background-color: white;
-}
-
 header {
   height: 55rem;
   z-index: 10;

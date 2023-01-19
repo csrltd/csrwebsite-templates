@@ -1,11 +1,52 @@
-$color-blue: #3461E2;
-$color-blue-fade: #E5EAFB;
-$whitesmoke: #F6F9FE;
-$tex-color: #3D3D3D;
-$border-radius: 100px;
+$color-blue-fade: #e5eafb;
+$whitesmoke: #f6f9fe;
+$tex-color: #3d3d3d;
+$border-radius: 10px;
+$color-blue: #3461e2;
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 
-//nav bar
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: $tex-color;
+    font-size: 18px;
+    background-color: white;
+}
+
+header {
+  height: 55rem;
+  z-index: 10;
+  position: relative;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li a {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-transform: capitalize;
+}
+
+section:not(.hero) {
+  margin-left: 156px;
+  margin-right: 156px;
+}
 
 .header {
   .nav-header {
@@ -45,6 +86,7 @@ $border-radius: 100px;
     }
   }
 }
+
 
 // header {
 //     max-width: 1200px;
