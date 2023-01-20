@@ -118,66 +118,6 @@ form input[type=submit] {
   text-decoration: underline;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  gap: 50px;
-  justify-content: space-between;
-  align-items: center;
-}
-.container .col {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 30px;
-}
-.container .col img {
-  border-radius: 20px;
-}
-
-footer {
-  background-color: #3461E2;
-  color: #F6F9FE;
-  padding: 50px 0;
-}
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-footer .container .company {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-footer .container .company .copy-rights {
-  display: flex;
-  gap: 5px;
-}
-footer .container .company .copy-rights .copy-rghts-icon {
-  max-width: 22px;
-}
-footer .container .company .copy-rights p span {
-  font-weight: bold;
-  text-decoration: underline;
-}
-footer .container .site-map {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: end;
-}
-footer .container .site-map .social-media-icons {
-  display: flex;
-  justify-content: end;
-  gap: 15px;
-}
-
 .active-menu {
   text-decoration: underline;
   color: #3461E2;
