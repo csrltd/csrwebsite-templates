@@ -88,3 +88,43 @@ $color-black: #00000000;
         }
     }
 }
+
+.our-team {
+    .container {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h1 {
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            //flex-direction: column;
+            gap: 24px;
+            .col {
+                align-items: center;
+                gap: 20px;
+                width: 380px;
+            }
+            .profile {
+                
+                .profile-pic-and-title {
+                    display: flex;
+                    gap: 24px;
+                    align-items: center;
+                    margin-bottom: 24px;
+                }
+                    h4 {
+                        color: $color-blue;
+                        font-size: 18px;
+                    }
+                }
+        }
+    }
+}

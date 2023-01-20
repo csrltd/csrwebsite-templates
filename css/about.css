@@ -66,4 +66,36 @@
 .mission .container .col .row .icon {
   width: 50px;
   height: 50px;
+}
+
+.our-team .container {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.our-team .container h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.our-team .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.our-team .container .row .col {
+  align-items: center;
+  gap: 20px;
+  width: 380px;
+}
+.our-team .container .row .profile .profile-pic-and-title {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.our-team .container .row .profile h4 {
+  color: #3461e2;
+  font-size: 18px;
 }/*# sourceMappingURL=about.css.map */

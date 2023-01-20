@@ -29,10 +29,6 @@ section:not(.hero) {
   margin-right: 156px;
 }
 
-footer {
-  background-color: $color-blue;
-}
-
 
 .hero {
   background:linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%,
@@ -415,46 +411,6 @@ footer {
   }
 }
 
-.footer {
-  .container {
-    padding: 52px 155px;
-    .col {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      .row {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-
-        h1 {
-          color: $whitesmoke;
-        }
-
-        p {
-          color: $whitesmoke;
-        }
-
-        .social-media {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-        }
-
-        .footer-links {
-          display: flex;
-          gap: 20px;
-          padding-right: 50px;
-
-          a {
-            color: $whitesmoke;
-          }
-        }
-      }
-    }
-  }
-}
 
 
 

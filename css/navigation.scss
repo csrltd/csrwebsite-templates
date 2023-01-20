@@ -48,6 +48,10 @@ section:not(.hero) {
   margin-right: 156px;
 }
 
+footer {
+  background-color: $color-blue;
+}
+
 .header {
   .nav-header {
     display: flex;
@@ -83,6 +87,47 @@ section:not(.hero) {
                 border-radius: 10px;
             }
         }
+    }
+  }
+}
+
+.footer {
+  .container {
+    padding: 52px 155px;
+    .col {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+          color: $whitesmoke;
+        }
+
+        p {
+          color: $whitesmoke;
+        }
+
+        .social-media {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .footer-links {
+          display: flex;
+          gap: 20px;
+          padding-right: 50px;
+
+          a {
+            color: $whitesmoke;
+          }
+        }
+      }
     }
   }
 }
