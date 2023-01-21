@@ -291,6 +291,62 @@ section:not(.hero) {
   }
 }
 
+.testimonials {
+  margin-top: 90px;
+  .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+    h2 {
+      text-transform: capitalize;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .testimonials-paragrah {
+      font-size: 24px;
+    }
+
+    .col {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .row {
+        border-radius: $border-radius;
+        width: 270px;
+        background-color: $color-blue-fade;
+
+        .summary {
+          padding-left: 24px;
+          padding-right: 24px;
+          padding-top: 50px;
+        }
+
+        .client-img {
+          text-align: center;
+          .avatar {
+          width: 80px;
+          height: 80px;
+          border-radius: $border-radius;
+          margin-top: 25px;
+        }
+        }
+
+        .profile {
+          background-color: $color-blue;
+          text-align: center;
+          padding-bottom: 24px;
+          padding-top: 48px;
+          margin-top: -40px;
+          color: $whitesmoke;
+          border-bottom-left-radius: $border-radius;
+          border-bottom-right-radius: $border-radius;
+        }
+      }
+    }
+  }
+}
+
 .contacts {
   margin-top: 166px;
 

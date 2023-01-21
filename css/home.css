@@ -241,6 +241,57 @@ section:not(.hero) {
   height: 100px;
 }
 
+.testimonials {
+  margin-top: 90px;
+}
+.testimonials .container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.testimonials .container h2 {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: bold;
+}
+.testimonials .container .testimonials-paragrah {
+  font-size: 24px;
+}
+.testimonials .container .col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonials .container .col .row {
+  border-radius: 10px;
+  width: 270px;
+  background-color: #e5eafb;
+}
+.testimonials .container .col .row .summary {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 50px;
+}
+.testimonials .container .col .row .client-img {
+  text-align: center;
+}
+.testimonials .container .col .row .client-img .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+.testimonials .container .col .row .profile {
+  background-color: #3461e2;
+  text-align: center;
+  padding-bottom: 24px;
+  padding-top: 48px;
+  margin-top: -40px;
+  color: #f6f9fe;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 .contacts {
   margin-top: 166px;
 }
