@@ -257,39 +257,39 @@ section:not(.hero) {
 .testimonials .container .testimonials-paragrah {
   font-size: 24px;
 }
-.testimonials .container .col {
+
+.splide {
+  margin: 20px 15px;
+}
+.splide .splide__track .summary {
+  padding: 20px 20px;
+}
+.splide .splide__track .splide__list {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
-.testimonials .container .col .row {
-  border-radius: 10px;
-  width: 270px;
+.splide .splide__track .splide__slide {
   background-color: #e5eafb;
-}
-.testimonials .container .col .row .summary {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 50px;
-}
-.testimonials .container .col .row .client-img {
-  text-align: center;
-}
-.testimonials .container .col .row .client-img .avatar {
-  width: 80px;
-  height: 80px;
   border-radius: 10px;
-  margin-top: 25px;
 }
-.testimonials .container .col .row .profile {
+.splide .splide__track .avatar {
+  width: 80px;
+  border-radius: 10px;
+}
+.splide .splide__track .client-img {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.splide .splide__track .profile {
   background-color: #3461e2;
   text-align: center;
-  padding-bottom: 24px;
-  padding-top: 48px;
-  margin-top: -40px;
-  color: #f6f9fe;
+  padding: 15px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  margin-top: -25px;
+  color: #f6f9fe;
 }
 
 .contacts {

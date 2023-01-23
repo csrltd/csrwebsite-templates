@@ -306,43 +306,53 @@ section:not(.hero) {
       font-size: 24px;
     }
 
-    .col {
+    // .col {
+    //   display: flex;
+    //   align-items: center;
+    //   gap: 10px;
+      
+    // }
+  }
+}
+
+// testimonials silders
+.splide {
+  margin: 20px 15px;
+
+  .splide__track {
+    
+
+    .summary {
+      padding: 20px 20px;
+    }
+    .splide__list {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 20px;
+    }
+    .splide__slide {
+      background-color: $color-blue-fade;
+      border-radius: $border-radius;
+    }
+    .avatar {
+      width: 80px;
+      border-radius: $border-radius;
+    }
 
-      .row {
-        border-radius: $border-radius;
-        width: 270px;
-        background-color: $color-blue-fade;
+    .client-img {
+      text-align: center;
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
 
-        .summary {
-          padding-left: 24px;
-          padding-right: 24px;
-          padding-top: 50px;
-        }
-
-        .client-img {
-          text-align: center;
-          .avatar {
-          width: 80px;
-          height: 80px;
-          border-radius: $border-radius;
-          margin-top: 25px;
-        }
-        }
-
-        .profile {
-          background-color: $color-blue;
-          text-align: center;
-          padding-bottom: 24px;
-          padding-top: 48px;
-          margin-top: -40px;
-          color: $whitesmoke;
-          border-bottom-left-radius: $border-radius;
-          border-bottom-right-radius: $border-radius;
-        }
-      }
+    .profile {
+      background-color: $color-blue;
+      text-align: center;
+      padding: 15px;
+      border-bottom-left-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+      margin-top: -25px;
+      color: $whitesmoke;
     }
   }
 }
@@ -467,6 +477,8 @@ section:not(.hero) {
   }
 }
 
+
+// reponsivness 
 
 
 

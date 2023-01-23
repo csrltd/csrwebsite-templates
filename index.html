@@ -8,6 +8,7 @@
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 
     <link rel="icon" type="image/x-icon" href="/img/csr logo.svg">
     <title>Comprehensive Staffing
@@ -92,7 +93,7 @@
             </div>
             <div class="col">
                 <img src="./img/icons/🦆 icon _table_.svg" alt="">
-                <h3>software media management</h3>
+                <h3>social media management</h3>
             </div>
         </div>
     </section>
@@ -232,62 +233,80 @@
         <div class="container">
             <h2>our clients, our priority.</h2>
             <p class="testimonials-paragraph">What Our Customer Says About Our Services.</p>
-            <div class="col">
-                <div class="row">
-                    <p class="summary">“Lorem Ipsum is simply
-                    dummy text of the
-                    printing and typesetting
-                    industry. Lorem Ipsum
-                    has been the industry's.”</p>
-                    <div class="client-img">
-                    <img src="/img/avatar/avatar.png" alt="client" class="avatar">
-                    </div>
-                    <div class="profile">
-                        <h3>Janet Doe</h3>
-                        <p>Software engineer</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <p class="summary">“Lorem Ipsum is simply
-                        dummy text of the
-                        printing and typesetting
-                        industry. Lorem Ipsum
-                        has been the industry's.”</p>
-                    <div class="client-img">
-                        <img src="/img/avatar/avatar.png" alt="client" class="avatar">
-                    </div>
-                    <div class="profile">
-                        <h3>Janet Doe</h3>
-                        <p>Software engineer</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <p class="summary">“Lorem Ipsum is simply
-                        dummy text of the
-                        printing and typesetting
-                        industry. Lorem Ipsum
-                        has been the industry's.”</p>
-                    <div class="client-img">
-                        <img src="/img/avatar/avatar.png" alt="client" class="avatar">
-                    </div>
-                    <div class="profile">
-                        <h3>Janet Doe</h3>
-                        <p>Software engineer</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <p class="summary">“Lorem Ipsum is simply
-                        dummy text of the
-                        printing and typesetting
-                        industry. Lorem Ipsum
-                        has been the industry's.”</p>
-                    <div class="client-img">
-                        <img src="/img/avatar/avatar.png" alt="client" class="avatar">
-                    </div>
-                    <div class="profile">
-                        <h3>Janet Doe</h3>
-                        <p>Software engineer</p>
-                    </div>
+            <div class="splide col" id="test">
+                <div class="splide__track">
+                    <ul class="splide__list ">
+                        <li class="splide__slide">
+                            <p class="summary">“Lorem Ipsum is simply
+                                dummy text of the
+                                printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the industry's.”</p>
+                            <div class="client-img">
+                                <img src="/img/avatar/avatar.png" alt="client" class="avatar">
+                            </div>
+                            <div class="profile">
+                                <h3>Janet Doe</h3>
+                                <p>Software engineer</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="summary">“Lorem Ipsum is simply
+                                dummy text of the
+                                printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the industry's.”</p>
+                            <div class="client-img">
+                                <img src="/img/avatar/avatar.png" alt="client" class="avatar">
+                            </div>
+                            <div class="profile">
+                                <h3>Janet Doe</h3>
+                                <p>Software engineer</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="summary">“Lorem Ipsum is simply
+                                dummy text of the
+                                printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the industry's.”</p>
+                            <div class="client-img">
+                                <img src="/img/avatar/avatar.png" alt="client" class="avatar">
+                            </div>
+                            <div class="profile">
+                                <h3>Janet Doe</h3>
+                                <p>Software engineer</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="summary">“Lorem Ipsum is simply
+                                dummy text of the
+                                printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the industry's.”</p>
+                            <div class="client-img">
+                                <img src="/img/avatar/avatar.png" alt="client" class="avatar">
+                            </div>
+                            <div class="profile">
+                                <h3>Janet Doe</h3>
+                                <p>Software engineer</p>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <p class="summary">“Lorem Ipsum is simply
+                                dummy text of the
+                                printing and typesetting
+                                industry. Lorem Ipsum
+                                has been the industry's.”</p>
+                            <div class="client-img">
+                                <img src="/img/avatar/avatar.png" alt="client" class="avatar">
+                            </div>
+                            <div class="profile">
+                                <h3>Janet Doe</h3>
+                                <p>Software engineer</p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="icons">
@@ -446,7 +465,15 @@
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const a = new Splide('#test', {
+                perPage: 4,
+                perMove: 1,
+            }).mount();
+        })
+    </script>
     <script src="/js/nav.js"></script>
     <script src="/js/main.js"></script>
 </body>

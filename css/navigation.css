@@ -66,6 +66,7 @@ footer {
 .header .nav-header .brand .logo {
   width: 60px;
   height: 60px;
+  pointer-events: none;
 }
 .header .nav-header .nav-menu .links {
   display: flex;
