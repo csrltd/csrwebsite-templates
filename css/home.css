@@ -121,31 +121,31 @@ section:not(.hero) {
   border-radius: 10px;
   padding: 50px;
 }
-.about .about-container h1 {
+.about .container h1 {
   text-transform: capitalize;
   font-size: 45px;
   font-weight: bold;
   line-height: 61px;
 }
-.about .about-container .col {
+.about .container .col {
   margin-top: 30px;
 }
-.about .about-container .col .row {
+.about .container .col .row {
   display: flex;
   align-items: center;
   gap: 41px;
 }
-.about .about-container .col .row h2 {
+.about .container .col .row h2 {
   text-transform: capitalize;
   margin-bottom: 22px;
   font-size: 32px;
   font-weight: 700;
   line-height: 38px;
 }
-.about .about-container .col .row p {
+.about .container .col .row p {
   margin-bottom: 12px;
 }
-.about .about-container .col .row a {
+.about .container .col .row a {
   color: #3461e2;
   text-decoration: underline;
 }
@@ -272,6 +272,7 @@ section:not(.hero) {
 .splide .splide__track .splide__slide {
   background-color: #e5eafb;
   border-radius: 10px;
+  max-width: 300px;
 }
 .splide .splide__track .avatar {
   width: 80px;

@@ -143,7 +143,7 @@ section:not(.hero) {
   border-radius: $border-radius;
   padding: 50px;
 
-  .about-container {
+  .container {
     h1 {
       text-transform: capitalize;
       font-size: 45px;
@@ -333,6 +333,7 @@ section:not(.hero) {
     .splide__slide {
       background-color: $color-blue-fade;
       border-radius: $border-radius;
+      max-width: 300px;
     }
     .avatar {
       width: 80px;

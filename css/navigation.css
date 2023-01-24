@@ -81,6 +81,20 @@ footer {
   padding: 10px 25px;
   border-radius: 10px;
 }
+.header .nav-header .nav-menu .links button {
+  font-size: 24px;
+  color: #f6f9fe;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.header .nav-header .nav-toggle .toggle-btn {
+  font-size: 24px;
+  background: transparent;
+  color: #f6f9fe;
+  border: transparent;
+  cursor: pointer;
+}
 
 .footer .container {
   padding: 52px 155px;
@@ -113,4 +127,10 @@ footer {
 }
 .footer .container .col .row .footer-links a {
   color: #f6f9fe;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle .toggle-btn {
+    display: none;
+  }
 }/*# sourceMappingURL=navigation.css.map */
