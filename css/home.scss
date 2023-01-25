@@ -305,58 +305,15 @@ section:not(.hero) {
     .testimonials-paragrah {
       font-size: 24px;
     }
-
-    // .col {
-    //   display: flex;
-    //   align-items: center;
-    //   gap: 10px;
-      
-    // }
   }
 }
 
-// testimonials silders
-.splide {
-  margin: 20px 15px;
 
-  .splide__track {
-    
-
-    .summary {
-      padding: 20px 20px;
-    }
-    .splide__list {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .splide__slide {
-      background-color: $color-blue-fade;
-      border-radius: $border-radius;
-      max-width: 300px;
-    }
-    .avatar {
-      width: 80px;
-      border-radius: $border-radius;
-    }
-
-    .client-img {
-      text-align: center;
-      padding-bottom: 10px;
-      padding-top: 10px;
-    }
-
-    .profile {
-      background-color: $color-blue;
-      text-align: center;
-      padding: 15px;
-      border-bottom-left-radius: $border-radius;
-      border-bottom-right-radius: $border-radius;
-      margin-top: -25px;
-      color: $whitesmoke;
-    }
-  }
+.avatar {
+  width: 80px;
+  border-radius: $border-radius;
 }
+
 
 .contacts {
   margin-top: 166px;
@@ -479,7 +436,46 @@ section:not(.hero) {
 }
 
 
-// reponsivness 
+// sliders
+.slider-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.slider {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  transition: transform 0.5s;
+}
+
+.card {
+  width: 20vw;
+  display: inline-block;
+  background-color: $color-blue-fade;
+}
+
+.customer-testimonial {
+  padding: 50px 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
