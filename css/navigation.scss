@@ -4,23 +4,23 @@ $tex-color: #3d3d3d;
 $border-radius: 10px;
 $color-blue: #3461e2;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    z-index: 2;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 2;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Nunito Sans', sans-serif;
-    color: $tex-color;
-    font-size: 18px;
-    background-color: white;
+  font-family: "Nunito Sans", sans-serif;
+  color: $tex-color;
+  font-size: 18px;
+  background-color: white;
 }
 
 header {
@@ -30,17 +30,17 @@ header {
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 li a {
-    color: white;
-    font-family: 'Lato', sans-serif;
-    text-transform: capitalize;
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
 }
 
 section:not(.hero) {
@@ -48,67 +48,67 @@ section:not(.hero) {
   margin-right: 156px;
 }
 
+.container {
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: auto;
+}
+
 footer {
   background-color: $color-blue;
 }
 
 .header {
-  .nav-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 200px;
-    .brand {
+  .container {
+    .nav-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .brand {
         width: 400px;
         display: flex;
         align-items: center;
         gap: 10px;
         h1 {
-            text-transform: capitalize;
-            color: white;
-            font-size: 20px;
+          text-transform: capitalize;
+          color: white;
+          font-size: 20px;
         }
-      .logo {
-        width: 60px;
-        height: 60px;
-        pointer-events: none;
+        .logo {
+          width: 60px;
+          height: 60px;
+          pointer-events: none;
+        }
       }
-    }
-    .nav-menu {
+      .nav-menu {
         .links {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+
+          .contact-btn {
             display: flex;
             align-items: center;
-            gap: 25px;
-
-            .contact-btn {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                background-color: $color-blue;
-                padding: 10px 25px;
-                border-radius: 10px;
-            }
-            button {
-              font-size: 24px;
-              color: $whitesmoke;
-              background: transparent;
-              border-color: transparent;
-              cursor: pointer;
-            }
+            gap: 10px;
+            background-color: $color-blue;
+            padding: 10px 25px;
+            border-radius: 10px;
+          }
+          button {
+            font-size: 24px;
+            color: $whitesmoke;
+            background: transparent;
+            border-color: transparent;
+            cursor: pointer;
+          }
         }
-    }
-    .nav-toggle {
-      .toggle-btn {
-        font-size: 24px;
-        background: transparent;
-        color: $whitesmoke;
-        border: transparent;
-        cursor: pointer;
+      }
+      .nav-toggle {
+        visibility: hidden;
       }
     }
   }
 }
-
 .footer {
   .container {
     padding: 52px 155px;
@@ -151,14 +151,24 @@ footer {
 }
 
 //responsiveness
-@media screen and (min-width: 800px) {
-  .nav-toggle {
-    .toggle-btn {
-      display: none;
+@media screen and (max-width: 540px) {
+
+  .container {
+    padding: 0 20px;
+  }
+  .header {
+    .container {
+      padding-top: 20p;
+
+      .nav-menu {
+        display: none;
+      }
+
+      .nav-toggle {
+        visibility: visible;
+        color: $whitesmoke;
+      } 
+
     }
   }
 }
-
-
-
-
