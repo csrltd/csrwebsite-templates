@@ -24,10 +24,12 @@ li a {
     text-transform: capitalize;
 }
 
-section:not(.hero) {
-  margin-left: 156px;
-  margin-right: 156px;
-}
+// section:not(.hero) {
+//   margin-left: 156px;
+//   margin-right: 156px;
+// }
+
+
 
 
 .hero {
@@ -38,14 +40,13 @@ section:not(.hero) {
     background-size: cover;
     margin-top: -880px;
     height: 95vh;
-    width: 100%;
+    max-width: 100%;
 
     .container {
       display: flex;
       flex-direction: column;
       gap: 17px;
       padding-top: 250px;
-      padding-left: 200px;
         h4 {
             text-transform: capitalize;
             color: $color-blue-fade;
@@ -155,7 +156,6 @@ section:not(.hero) {
       margin-top: 30px;
       .row {
         display: flex;
-        align-items: center;
         gap: 41px;
 
         h2 {
@@ -181,8 +181,6 @@ section:not(.hero) {
 
 .services-details {
   margin-top: 90px;
-  
-
   .container {
     h1 {
       text-transform: capitalize;
@@ -199,12 +197,12 @@ section:not(.hero) {
     .col {
       display: flex;
       align-items: center;
-      gap: 50px;
+      gap: 30px;
 
       .row {
         background-color: #E5EAFB;
         border-radius: $border-radius;
-        width: 280px;
+        width: 85vw;
         padding: 30px;
 
         .title-col {
@@ -221,7 +219,7 @@ section:not(.hero) {
 
           h2 {
             text-transform: capitalize;
-            font-size: 25px;
+            font-size: 20px;
           }
         }
       }
@@ -233,6 +231,8 @@ section:not(.hero) {
   margin-top: 90px;
   background-color: $color-blue;
   border-radius: $border-radius;
+  margin-left: 170px;
+  margin-right: 170px;
 
   .container {
     text-align: center;
@@ -256,7 +256,7 @@ section:not(.hero) {
       padding: 17px 35px;
       border: transparent;
       border-radius: $border-radius;
-      
+
       a {
         color: $color-blue;
         display: flex;
@@ -339,12 +339,12 @@ section:not(.hero) {
         .get-in-touch-text {
           margin-right: 40%;
         }
-        
+
         .col-1 {
           display: flex;
           align-items: center;
           gap: 30px;
-          
+
           .row-1 {
             background-color: $whitesmoke;
             width: 300px;
@@ -410,7 +410,7 @@ section:not(.hero) {
               display: flex;
               align-items: center;
               gap: 15px;
-              
+
               a {
               color: $whitesmoke;
               text-transform: capitalize;
@@ -464,6 +464,127 @@ section:not(.hero) {
 .customer-testimonial {
   padding: 50px 24px;
 }
+
+//responsiveness
+@media screen and (max-width: 520px) {
+  .hero {
+    .hero-btns {
+      flex-direction: column;
+
+      .hero-btn1 {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .partnership {
+    width: 500px;
+    margin-left: 20px;
+    
+    .container {
+      padding: 20px 40px;
+    }
+  }
+
+  .contacts {
+    .container {
+      .col {
+        flex-direction: column;
+        gap: 10px;
+
+        .row {
+          .col-1 {
+            flex-direction: column;
+          }
+        }
+      }
+
+      .location {
+        flex-direction: column;
+        gap: 0;
+
+        .map {
+          iframe {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+
+  .service-details {
+    .container {
+      .col {
+      .row {
+        width: 20px;
+      }
+    }
+    }
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .services-section {
+    .row {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1236px) {
+  .services-details {
+    .container {
+      .col {
+        .row {
+          .title-col {
+            gap: 18px;
+            .icon {
+              width: 20px;
+              height: 30px;
+            }
+            h2 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1086px) {
+  .services-details {
+    .container {
+      .col {
+        display: flex;
+        flex-direction: column;
+        .row {
+          width: 380px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 964px) {
+  .partners {
+    .container {
+      .row {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 15px;
+      }
+    }
+  }
+}
+
+
 
 
 
