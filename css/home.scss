@@ -149,13 +149,13 @@ li a {
       text-transform: capitalize;
       font-size: 45px;
       font-weight: bold;
-      line-height: 61px;
     }
 
     .col {
       margin-top: 30px;
       .row {
         display: flex;
+        align-items: center;
         gap: 41px;
 
         h2 {
@@ -174,6 +174,7 @@ li a {
           color: $color-blue;
           text-decoration: underline;
         }
+       
       }
     }
   }
@@ -243,7 +244,7 @@ li a {
       text-transform: capitalize;
       font-weight: lighter;
       font-size: 35px;
-      line-height: 61px;
+
     }
 
     p {
@@ -514,15 +515,6 @@ li a {
     }
   }
 
-  .service-details {
-    .container {
-      .col {
-      .row {
-        width: 20px;
-      }
-    }
-    }
-  }
 }
 
 @media screen and (max-width: 862px) {
@@ -570,8 +562,6 @@ li a {
   }
 }
 
-
-
 @media screen and (max-width: 964px) {
   .partners {
     .container {
@@ -583,6 +573,130 @@ li a {
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .about {
+    .container {
+      .col {
+        .row {
+          flex-direction: column;
+          padding-bottom: 20px;
+          img {
+            width: 700px;
+          }
+        }
+        .row-reverse {
+          flex-direction: column-reverse;
+          padding-top: 20px;
+        }
+        .about-description {
+          width: 700px;
+        }
+      }
+    }
+  }
+
+  .contacts {
+    .container {
+      .col {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .row {
+          .form-container {
+            margin-top: 10px;
+            padding-right: 550px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .partnership {
+    .container {
+      h1 {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    .container {
+      .col {
+        .row {
+          flex-direction: column;
+          padding-bottom: 20px;
+          img {
+            width: 500px;
+          }
+        }
+        .row-reverse {
+          flex-direction: column-reverse;
+          padding-top: 20px;
+        }
+        .about-description {
+          width: 500px;
+        }
+      }
+    }
+  }
+
+  .partnership {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about {
+    .container {
+      h1 {
+        font-size: 20px;
+      }
+      .col {
+        .row {
+          flex-direction: column;
+          padding-bottom: 20px;
+          img {
+            width: 300px;
+          }
+        }
+        .row-reverse {
+          flex-direction: column-reverse;
+          padding-top: 20px;
+        }
+        .about-description {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 879px) {
+  .contacts {
+    .container {
+      .col {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .row {
+          .form-container {
+            margin-top: 10px;
+            padding-left: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
 
 
 

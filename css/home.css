@@ -119,13 +119,13 @@ li a {
   text-transform: capitalize;
   font-size: 45px;
   font-weight: bold;
-  line-height: 61px;
 }
 .about .container .col {
   margin-top: 30px;
 }
 .about .container .col .row {
   display: flex;
+  align-items: center;
   gap: 41px;
 }
 .about .container .col .row h2 {
@@ -199,7 +199,6 @@ li a {
   text-transform: capitalize;
   font-weight: lighter;
   font-size: 35px;
-  line-height: 61px;
 }
 .partnership .container p {
   margin-top: 20px;
@@ -413,9 +412,6 @@ li a {
   .contacts .container .location .map iframe {
     width: 350px;
   }
-  .service-details .container .col .row {
-    width: 20px;
-  }
 }
 @media screen and (max-width: 862px) {
   .services-section .row {
@@ -450,5 +446,82 @@ li a {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about .container .col .row {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .about .container .col .row img {
+    width: 700px;
+  }
+  .about .container .col .row-reverse {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+  .about .container .col .about-description {
+    width: 700px;
+  }
+  .contacts .container .col {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contacts .container .col .row .form-container {
+    margin-top: 10px;
+    padding-right: 550px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .partnership .container h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about .container .col .row {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .about .container .col .row img {
+    width: 500px;
+  }
+  .about .container .col .row-reverse {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+  .about .container .col .about-description {
+    width: 500px;
+  }
+  .partnership {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .about .container h1 {
+    font-size: 20px;
+  }
+  .about .container .col .row {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .about .container .col .row img {
+    width: 300px;
+  }
+  .about .container .col .row-reverse {
+    flex-direction: column-reverse;
+    padding-top: 20px;
+  }
+  .about .container .col .about-description {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 879px) {
+  .contacts .container .col {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contacts .container .col .row .form-container {
+    margin-top: 10px;
+    padding-left: 70px;
   }
 }/*# sourceMappingURL=home.css.map */
