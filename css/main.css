@@ -118,6 +118,10 @@ form input[type=submit] {
   text-decoration: underline;
 }
 
+.heading {
+  font-size: 45px;
+}
+
 .active-menu {
   text-decoration: underline;
   color: #3461E2;

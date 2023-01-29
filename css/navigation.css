@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -15,12 +15,6 @@ body {
   color: #3d3d3d;
   font-size: 18px;
   background-color: white;
-}
-
-header {
-  height: 55rem;
-  z-index: 10;
-  position: relative;
 }
 
 ul {
@@ -47,6 +41,13 @@ footer {
   background-color: #3461e2;
 }
 
+.header {
+  background-color: transparent;
+  height: 100px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 10;
+}
 .header .container .nav-header {
   display: flex;
   align-items: center;
