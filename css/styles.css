@@ -1,0 +1,70 @@
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li a {
+  color: white;
+  font-family: "Lato", sans-serif;
+  text-transform: capitalize;
+}
+
+button, input, textarea {
+  padding: 17px 35px;
+  border-radius: 10px;
+  transition: linear 0.3s;
+}
+
+.heading {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.sub-heading {
+  font-size: 16px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.breadchrums {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.breadchrums a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  text-decoration: underline;
+}
+.breadchrums a .prev-page {
+  text-decoration: underline;
+}
+
+.page-intro {
+  color: white;
+  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/partners/about-bg-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+.page-intro .container {
+  padding-top: 200px;
+  display: grid;
+  gap: 24px;
+}
+.page-intro .container .page-summary {
+  margin-right: 40%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+.row .col {
+  width: 50%;
+}/*# sourceMappingURL=styles.css.map */
