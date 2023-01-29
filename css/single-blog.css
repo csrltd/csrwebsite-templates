@@ -1,26 +1,32 @@
-.blog-header {
-  padding-top: 80px;
+.header {
+  background-color: #3461E2;
 }
-.blog-header .container .col .blog-title {
+
+.blog-header {
+  padding-top: 150px;
+}
+.blog-header .container .row .col .blog-title {
   font-size: 32px;
 }
-.blog-header .container .col .meta {
+.blog-header .container .row .col .meta {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.blog-header .container .col .meta .meta-item a {
+.blog-header .container .row .col .meta .meta-item a {
   display: flex;
   align-items: center;
   gap: 15px;
 }
-.blog-header .container .col .meta .meta-item a img {
+.blog-header .container .row .col .meta .meta-item a img {
   width: 32px;
   border-radius: 0;
 }
+.blog-header .container .row .featured-image img {
+  border-radius: 10px;
+}
 
 .blog-content {
-  padding-top: 80px;
   padding-bottom: 80px;
   align-items: flex-start;
   position: relative;
@@ -29,13 +35,17 @@
   position: relative;
   align-items: flex-start;
 }
-.blog-content .container .content {
+.blog-content .container .row {
+  align-items: flex-start;
+  gap: 20px;
+}
+.blog-content .container .row .content {
   width: 70%;
   background-color: #F6F9FE;
   padding: 20px;
   border-radius: 20px;
 }
-.blog-content .container .side-bar {
+.blog-content .container .row .side-bar {
   width: 30%;
   background-color: #F6F9FE;
   padding: 20px;
@@ -47,12 +57,12 @@
   position: sticky;
   top: 90px;
 }
-.blog-content .container .side-bar .services {
+.blog-content .container .row .side-bar .services {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.blog-content .container .side-bar .services a .service {
+.blog-content .container .row .side-bar .services a .service {
   display: flex;
   align-items: center;
   padding: 20px;
@@ -60,11 +70,11 @@
   border-radius: 20px;
   gap: 15px;
 }
-.blog-content .container .side-bar .services a .service img {
+.blog-content .container .row .side-bar .services a .service img {
   width: 42px;
   border-radius: 0;
 }
-.blog-content .container .side-bar .services a .service p {
+.blog-content .container .row .side-bar .services a .service p {
   font-size: 20px;
 }
 

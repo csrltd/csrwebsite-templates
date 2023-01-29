@@ -1,68 +1,21 @@
-.hero {
-  background: linear-gradient(127.31deg, rgba(0, 0, 0, 0.68) 44.53%, rgba(0, 0, 0, 0) 83.52%), url("/img/partners/about-bg-image.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -880px;
-  height: 80vh;
-  max-width: 100%;
-}
-.hero .container {
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-  padding-top: 250px;
-  color: #F6F9FE;
-}
-.hero .container .blog-intro {
-  font-size: 50px;
-  text-transform: capitalize;
-  width: 600px;
-  font-weight: bold;
-}
-
-.blog-page-header {
-  padding-top: 50px;
-}
-.blog-page-header .container {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-}
-.blog-page-header .container .col {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 30px;
-}
-.blog-page-header .container .col img {
-  border-radius: 20px;
-}
-
 .blogs {
   padding: 80px;
 }
 .blogs .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 21% 21% 21% 21%;
   gap: 20px;
   row-gap: 20px;
 }
 .blogs .container a .blog {
   background-color: #F6F9FE;
-  border-radius: 20px;
-  width: 280px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 .blogs .container a .blog img {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .blogs .container a .blog .blog-summary {
   padding: 20px;
