@@ -4,8 +4,7 @@ $tex-color: #3d3d3d;
 $border-radius: 10px;
 $color-blue: #3461e2;
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +21,7 @@ body {
   font-size: 18px;
   background-color: white;
 }
-
-header {
-  height: 55rem;
-  z-index: 10;
-  position: relative;
-}
+//Refactored this
 
 ul {
   list-style-type: none;
@@ -54,6 +48,11 @@ footer {
 }
 
 .header {
+  background-color: transparent;
+  height: 100px;
+  margin-bottom: -100px;
+  position: relative;
+  z-index: 10;
   .container {
     .nav-header {
       display: flex;
