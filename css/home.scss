@@ -331,9 +331,9 @@ button, input, textarea {
         gap: 50px;
         width: 50%;
 
-        .get-in-touch-text {
-          margin-right: 40%;
-        }
+        // .get-in-touch-text {
+        //   margin-right: 40%;
+        // }
 
         .col-1 {
           display: flex;
@@ -343,6 +343,7 @@ button, input, textarea {
           .row-1 {
             background-color: $whitesmoke;
             width: 300px;
+            height: 250px;
             display: flex;
             flex-direction: column;
             gap: 30px;
@@ -390,7 +391,7 @@ button, input, textarea {
           }
 
           input[type=submit] {
-            width: 40%;
+            width: 200px;
             font-size: 18px;
             background-color: $color-blue;
             color: white;
@@ -547,6 +548,7 @@ button, input, textarea {
 
   .contacts {
     .container {
+      margin-left: 180px;
       .col {
         flex-direction: column;
         gap: 10px;
@@ -555,6 +557,7 @@ button, input, textarea {
           .col-1 {
             flex-direction: column;
           }
+        
         }
       }
 
@@ -580,6 +583,12 @@ button, input, textarea {
       flex-direction: column;
       gap: 50px;
     }
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .services-section {
+    margin-top: 30px;
   }
 }
 
@@ -669,6 +678,11 @@ button, input, textarea {
             margin-top: 10px;
             padding-right: 550px;
           }
+          // .col-1 {
+          //   .row-1 {
+          //     height: 250px;
+          //   }
+          // }
         }
       }
     }
@@ -693,9 +707,11 @@ button, input, textarea {
           flex-direction: column;
           padding-bottom: 20px;
 
+         .about-img {
           img {
-            width: 500px;
+            width: 400px;
           }
+         }
         }
 
         .row-reverse {
@@ -712,6 +728,16 @@ button, input, textarea {
 
   .partnership {
     width: 500px;
+  }
+
+  .contacts {
+    .container {
+      .col {
+        .row {
+          margin-right: 200px;
+        }
+      }
+    }
   }
 }
 
@@ -743,6 +769,16 @@ button, input, textarea {
       }
     }
   }
+
+  // .contacts {
+  //   .container {
+  //     .col {
+  //       .row {
+  //         margin-left: 200px;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @media screen and (max-width: 879px) {
@@ -751,14 +787,109 @@ button, input, textarea {
       .col {
         flex-direction: column;
         justify-content: flex-start;
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 940px) {
+  .about {
+    .container {
+      .col {
         .row {
-          .form-container {
-            margin-top: 10px;
-            padding-left: 70px;
+          img {
+            width: 500px;
           }
         }
       }
     }
   }
 }
+
+@media screen and (max-width: 620px) {
+  .about {
+    .container {
+      .col {
+        .row {
+          .about-img {
+            img {
+              width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .about {
+    .container {
+      .col {
+        .row {
+          .about-img {
+            img {
+              width: 200px;
+            }
+          }
+          .about-description {
+            width: 200px;
+            h2 {
+              font-size: 20px;
+            }
+          }
+        }
+        .row-not-reverse {
+          .about-img {
+            padding-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 384px) {
+  .about {
+    .container {
+      .col {
+        .row {
+          .about-img {
+            img {
+              width: 150px;
+            }
+          }
+        }
+        .row-reverse {
+          padding-right: 30px;
+        }
+        .row-not-reverse {
+          padding-left: 40px;
+          .about-img {
+            padding-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .partnership {
+    .container {
+      margin-right: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 1218px) {
+  .contacts {
+    .container {
+      .col {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+
