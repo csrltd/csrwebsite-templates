@@ -96,44 +96,68 @@ footer {
   visibility: hidden;
 }
 
-.footer {
-  width: 100%;
+footer {
+  padding-top: 50px;
+  color: white;
 }
-.footer .container {
-  padding: 20px 50px;
-}
-.footer .container .col {
+footer .container .row {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footer .container .col .row {
+footer .container .row .about-company {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.footer .container .col .row h1 {
+footer .container .row .about-company h1 {
   color: #f6f9fe;
   font-size: 25px;
 }
-.footer .container .col .row p {
+footer .container .row .about-company p {
   color: #f6f9fe;
 }
-.footer .container .col .row .social-media {
+footer .container .row .links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .container .row .links .social-media {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.footer .container .col .row .footer-links {
+footer .container .row .links .footer-links {
   display: flex;
   gap: 20px;
 }
-.footer .container .col .row .footer-links a {
+footer .container .row .links .footer-links a {
   color: #f6f9fe;
 }
-.footer .container p {
+footer .container p {
   color: #f6f9fe;
   padding-top: 15px;
+}
+footer .copy {
+  background-color: #0937BB;
+}
+footer .copy .container .row {
+  justify-content: space-between;
+}
+footer .copy .container .row .menu-links {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 12px;
+}
+footer .copy .container .row .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+footer .copy .container .row .social-media img {
+  width: 24px;
 }
 
 @media screen and (max-width: 1020px) {
@@ -165,5 +189,29 @@ footer {
   .footer .container .col {
     flex-direction: column;
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 540px) {
+  footer .container .row {
+    flex-direction: column;
+    gap: 50px;
+  }
+  footer .container .row .col {
+    width: 100%;
+  }
+  footer .copy {
+    margin-top: 50px;
+    padding: 20px 0;
+  }
+  footer .copy .container .row {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+  footer .copy .container .row .menu-links {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  footer .copy .container .row .social-media {
+    justify-content: start;
   }
 }/*# sourceMappingURL=navigation.css.map */
