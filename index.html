@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="/css/main.css"> -->
     <link rel="stylesheet" href="/css/navigation.css">
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <script src="https://kit.fontawesome.com/54c10e37be.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -77,9 +78,9 @@
                 </div>
                 <div class="btn">
                     <button class="hero-btn2">
-                        <img src="./img/icons/play-btn.svg" alt="" class="icon">
+                        <img src="./img/icons/play-btn.svg" alt="">
                         <a href="https://www.youtube.com/embed/9KcvJozkbSQ">
-                            watch our business launch
+                            Watch our business launch
                         </a>
                     </button>
                 </div>
@@ -208,12 +209,12 @@
             <p>
                 our services are professionaly delivered around the world
             </p>
-            <button>
-                <a href="">
-                    Hire a talent
-                    <img src="/img/icons/angle right blue.svg" alt="">
-                </a>
-            </button>
+            <a href="">
+                <button class="btn-white">
+                    <span>Hire a talent</span>
+                <i class="fas fa-angle-double-right"></i>
+                </button>
+            </a>
         </div>
     </section>
 
@@ -221,21 +222,25 @@
         <div class="container">
             <h1 class="heading">our partners</h1>
             <div class="row">
-                <div class="col">
+                <a href="">
                     <img src="/img/logos/cohesive-health-care.jpeg" alt="cohesive-health-care">
-                </div>
-                <div class="col">
+                </a>
+
+                <a href="">
                     <img src="/img/logos/cohesivestaffing.jpeg" alt="cohesive-staffing" class="partners-logo">
-                </div>
-                <div class="col">
+                </a>
+
+                <a href="">
                     <img src="/img/logos/Geantox.jpeg" alt="Gentox" class="partners-logo">
-                </div>
-                <div class="col">
+                </a>
+
+                <a href="">
                     <img src="/img/logos/meat-processing.jpeg" alt="meat-processing" class="partners-logo">
-                </div>
-                <div class="col">
+                </a>
+
+                <a href="">
                     <img src="/img/logos/tca.jpeg" alt="tca" class="partners-logo">
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -496,16 +501,53 @@
         </div>
     </section>
 
-    <footer class="footer" id="footer">
+    <footer id="footer">
         <div class="container">
-            <div class="col">
-                <div class="row">
+            <div class="row">
+                <div class="col about-company">
                     <h1>About the company</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
+
                 </div>
-                <!-- social media icons -->
+
+                <div class="col about-company">
+                    <h1>About the company</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
+
+                </div>
+
+                <div class="col about-company">
+                    <h1>About the company</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, odio.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="copy">
+            <div class="container">
                 <div class="row">
-                    <div class="social-media">
+                    <div class="col copy-text">
+                        <i class="far fa-copyright"></i> 2023 Copy Rights, All reserved
+                    </div>
+                    <ul class="menu-links">
+                        <li class="link">
+                            <a href="index.html">home</a>
+                        </li>
+                        <li class="link">
+                            <a href="about.html">about us</a>
+                        </li>
+                        <li class="link">
+                            <a href="#services">services</a>
+                        </li>
+                        <li class="link">
+                            <a href="">gallery</a>
+                        </li>
+                        <li class="link">
+                            <a href="blog.html">news room</a>
+                        </li>
+                        
+                    </ul>
+                    <div class="col social-media">
                         <div class="icon">
                             <a href="https://www.facebook.com/profile.php?id=100086812094253&mibextid=LQQJ4d">
                                 <img src="/img/icons/🦆 icon _Facebook_.svg" alt="">
@@ -531,18 +573,11 @@
                                 <img src="/img/icons/🦆 icon _LinkedIn_.svg" alt="">
                             </a>
                         </div>
-                    </div>
-                    <!-- other links -->
-                    <div class="footer-links">
-                        <a href="" id="#home">Home</a>
-                        <a href="" id="#about">About</a>
-                        <a href="" id="#services">Services</a>
-                        <a href="">Gallery</a>
-                        <a href="">Get in touch</a>
+                        <!-- other links -->
+
                     </div>
                 </div>
             </div>
-            <p>&copy; Copyright date CSR Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 

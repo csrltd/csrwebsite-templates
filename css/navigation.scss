@@ -107,16 +107,17 @@ footer {
     }
   }
 }
-.footer {
-  width: 100%;
+footer {
+  padding-top: 50px;
+  color: white;
   .container {
-    padding: 20px 50px;
-    .col {
+    
+    .row {
       display: flex;
       align-items: center;
       justify-content: space-between;
 
-      .row {
+      .about-company {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -129,17 +130,22 @@ footer {
         p {
           color: $whitesmoke;
         }
-
+      }
+      
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         .social-media {
           display: flex;
           align-items: center;
           gap: 10px;
         }
-
+  
         .footer-links {
           display: flex;
           gap: 20px;
-
+  
           a {
             color: $whitesmoke;
           }
@@ -149,6 +155,31 @@ footer {
     p {
       color: $whitesmoke;
       padding-top: 15px;
+    }
+  }
+  .copy {
+    background-color: #0937BB;
+    .container {
+
+      .row {
+        justify-content: space-between;
+        .menu-links {
+         display: flex;
+         align-items: center;
+         width: 70%;
+         gap: 12px;
+        }
+        .social-media {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          
+          gap: 12px;
+          img {
+            width: 24px;
+          }
+        }
+      }
     }
   }
 }
@@ -197,6 +228,40 @@ footer {
       .col {
         flex-direction: column;
         justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 540px) {
+  footer {
+    .container {
+      .row {
+        flex-direction: column;
+        gap: 50px;
+        .col {
+          width: 100%;
+        }
+      }
+    }
+
+    .copy{
+      margin-top: 50px;
+      padding:  20px 0;
+
+      .container {
+        .row {
+          flex-direction: column-reverse;
+          gap: 24px;
+          .menu-links {
+            flex-wrap: wrap;
+            width: 100%;
+          }
+
+          .social-media {
+            justify-content:start;
+          }
+        }
       }
     }
   }
