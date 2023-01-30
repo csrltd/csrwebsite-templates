@@ -269,9 +269,6 @@ button, input, textarea {
   gap: 50px;
   width: 50%;
 }
-.contacts .container .col .row .get-in-touch-text {
-  margin-right: 40%;
-}
 .contacts .container .col .row .col-1 {
   display: flex;
   align-items: center;
@@ -280,6 +277,7 @@ button, input, textarea {
 .contacts .container .col .row .col-1 .row-1 {
   background-color: #f6f9fe;
   width: 300px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -323,7 +321,7 @@ button, input, textarea {
   border: 1px solid #3461e2;
 }
 .contacts .container .col .row .form-container input[type=submit] {
-  width: 40%;
+  width: 200px;
   font-size: 18px;
   background-color: #3461e2;
   color: white;
@@ -442,6 +440,9 @@ button, input, textarea {
   .partnership .container {
     padding: 20px 40px;
   }
+  .contacts .container {
+    margin-left: 180px;
+  }
   .contacts .container .col {
     flex-direction: column;
     gap: 10px;
@@ -462,6 +463,11 @@ button, input, textarea {
     display: flex;
     flex-direction: column;
     gap: 50px;
+  }
+}
+@media screen and (max-width: 515px) {
+  .services-section {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 1236px) {
@@ -526,8 +532,8 @@ button, input, textarea {
     flex-direction: column;
     padding-bottom: 20px;
   }
-  .about .container .col .row img {
-    width: 500px;
+  .about .container .col .row .about-img img {
+    width: 400px;
   }
   .about .container .col .row-reverse {
     flex-direction: column-reverse;
@@ -538,6 +544,9 @@ button, input, textarea {
   }
   .partnership {
     width: 500px;
+  }
+  .contacts .container .col .row {
+    margin-right: 200px;
   }
 }
 @media screen and (max-width: 540px) {
@@ -564,8 +573,52 @@ button, input, textarea {
     flex-direction: column;
     justify-content: flex-start;
   }
-  .contacts .container .col .row .form-container {
-    margin-top: 10px;
-    padding-left: 70px;
+}
+@media screen and (max-width: 940px) {
+  .about .container .col .row img {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .about .container .col .row .about-img img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .about .container .col .row .about-img img {
+    width: 200px;
+  }
+  .about .container .col .row .about-description {
+    width: 200px;
+  }
+  .about .container .col .row .about-description h2 {
+    font-size: 20px;
+  }
+  .about .container .col .row-not-reverse .about-img {
+    padding-top: 30px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .about .container .col .row .about-img img {
+    width: 150px;
+  }
+  .about .container .col .row-reverse {
+    padding-right: 30px;
+  }
+  .about .container .col .row-not-reverse {
+    padding-left: 40px;
+  }
+  .about .container .col .row-not-reverse .about-img {
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .partnership .container {
+    margin-right: 150px;
+  }
+}
+@media screen and (max-width: 1218px) {
+  .contacts .container .col {
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=home.css.map */
