@@ -140,6 +140,8 @@ footer .container p {
 }
 footer .copy {
   background-color: #0937BB;
+  padding: 12px 0;
+  margin-top: 10px;
 }
 footer .copy .container .row {
   justify-content: space-between;
