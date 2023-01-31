@@ -5,20 +5,28 @@ $tex-color: #3d3d3d;
 $border-radius: 10px;
 $color-black: #00000000;
 
+.container {
+    padding: 100px 0;
+}
+
 
 .description {
     .container {
         padding-top: 100px;
 
-        .col {
+        .row {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             gap: 20px;
 
-            .col-1 {
+            .col {
                 background-color: $whitesmoke;
                 padding: 30px;
                 border-radius: $border-radius;
+                width: 60%;
+                
+                
 
                 h1 {
                     font-weight: bolder;
@@ -29,23 +37,27 @@ $color-black: #00000000;
                     padding-top: 20px;
                 }
             }
+            .col-description {
+                padding: 0;
+                background-color: transparent;
+                width: 40%;
+            }
+           
         }
     }
 }
 
 .mission {
     .container {
-        padding-top: 50px;
-
+        padding-top: 100px;
         .col {
             display: flex;
             align-items: center;
             justify-content: space-between;
-
             .row {
+                flex-direction: column;
+                gap: 12px;
                 width: 274px;
-                height: 196px;
-
                 .icon {
                     width: 50px;
                     height: 50px;
@@ -99,98 +111,78 @@ $color-black: #00000000;
 }
 
 //responsiveness
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 0 15px;
-    }
-}
-
 @media screen and (max-width: 540px) {
-    .hero {
-        height: 55vh;
-
-        .container {
-            .about-summary {
-                padding: 0 10px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero {
-        height: 60vh;
-    }
-}
-
-@media screen and (max-width: 1010px) {
+    //first section
     .description {
         .container {
-            .col {
-                flex-direction: column-reverse;
+            .row {
+                flex-direction: column;
 
-                .col-1 {
-                    width: 600px;
-                }
-
-                .col-2 {
-                    .description-img {
-                        width: 600px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 624px) {
-    .description {
-        .container {
-            .col {
-                flex-direction: column-reverse;
-
-                .col-1 {
+                .col {
                     width: 500px;
                 }
-
-                .col-2 {
-                    .description-img {
+                .col-description {
+                    img {
                         width: 500px;
                     }
                 }
             }
         }
     }
-}
 
-@media screen and (max-width: 540px) {
-    .description {
+    //second section
+    .mission {
         .container {
             .col {
-                flex-direction: column-reverse;
-                padding: 0 10px;
+                flex-direction: column;
+                gap: 24px;
+            }
+        }
+    }
 
-                .col-1 {
-                    width: 400px;
+    //third section
+    .our-team {
+        .container {
+            display: grid;
+            flex-wrap: wrap;
+
+            .row {
+                display: grid;
+                place-items: center;
+
+                .col {
+                    width: 280px;
                 }
+            }
+        }
+    }
+}
 
-                .col-2 {
-                    .description-img {
-                        width: 400px;
+@media screen and (max-width: 940px) {
+    .description {
+        .container {
+            .row {
+                flex-direction: column;
+
+                .col {
+                    width: 100%;
+                }
+                .col-description {
+                    img {
+                        width: 100%;
                     }
                 }
             }
         }
     }
-}
 
-@media screen and (max-width: 918px) {
     .mission {
         .container {
             .col {
                 flex-direction: column;
-                gap: 15px;
             }
         }
     }
 }
+
+
