@@ -44,6 +44,11 @@ button {
   transition: linear 0.2s;
 }
 
+.container {
+  max-width: 1200px;
+  padding: 0;
+}
+
 //White btn
 
 .btn-white {
@@ -107,4 +112,16 @@ button {
     .col {
         width: 50%;
     }
+}
+
+@media screen and(max-width:1250px) {
+  .container{
+    padding: 0 50px;
+  }
+}
+
+@media screen and(max-width:540px) {
+  .container{
+    padding: 0 20px;
+  }
 }
