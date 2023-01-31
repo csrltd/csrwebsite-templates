@@ -250,7 +250,6 @@ button, input, textarea {
   .container {
     .partnership-content {
       background-color: $color-blue;
-      
       text-align: center;
       display: grid;
       justify-content: center;
@@ -315,6 +314,13 @@ button, input, textarea {
 
 .contacts {
   .container {
+    .contacts-heading {
+      padding-bottom: 24px;
+
+      p {
+        width: 50%;
+      }
+    }
     .col {
       display: flex;
       align-items: center;
@@ -326,10 +332,6 @@ button, input, textarea {
         flex-direction: column;
         gap: 50px;
         width: 50%;
-
-        // .get-in-touch-text {
-        //   margin-right: 40%;
-        // }
 
         .col-1 {
           display: flex;
@@ -427,13 +429,15 @@ button, input, textarea {
 
       .row {
         width: 30%;
+        img {
+          height: 400px;
+        }
       }
       .map {
-        width: 70%;
+        margin-top: 5px;
         iframe {
-          width: 100%;
-          height: 391px;
-          border-radius: 0 10px 10px 0;
+          width: 848px;
+          height: 400px;
         }
       }
     }
@@ -622,7 +626,6 @@ button, input, textarea {
     .container {
       .col {
         flex-direction: column;
-
         .row {
           width: 100%;
 
@@ -658,6 +661,8 @@ button, input, textarea {
 
           iframe {
             border-radius: 0 0 $border-radius $border-radius;
+            width: 500px;
+            top: 0;
           }
         }
       }
@@ -695,6 +700,15 @@ button, input, textarea {
     .container {
       .col {
         flex-wrap: wrap;
+      }
+    }
+  }
+
+  //contacts
+  .contacts {
+    .container {
+      .col {
+        flex-direction: column;
       }
     }
   }
