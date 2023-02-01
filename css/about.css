@@ -29,6 +29,9 @@
   background-color: transparent;
   width: 40%;
 }
+.description .container .row .col-description img {
+  width: 401px;
+}
 
 .mission .container {
   padding-top: 100px;
@@ -37,15 +40,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 .mission .container .col .row {
   flex-direction: column;
   gap: 12px;
-  width: 274px;
 }
 .mission .container .col .row .icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .our-team .container {

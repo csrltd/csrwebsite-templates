@@ -156,24 +156,32 @@ button, input, textarea {
       flex-direction: column;
       gap: 50px;
 
-      .row-reverse {
-        padding-left: 50px;
-      }
+      // .row-reverse {
+      //   padding-left: 50px;
+      // }
 
-      .row-not-reverse {
-        padding-right: 50px;
-      }
+      // .row-not-reverse {
+      //   padding-right: 50px;
+      // }
 
       .row {
         display: flex;
         align-items: center;
         gap: 41px;
         //Refactored this
-        background-color: $color-blue-fade;
+        // background-color: $color-blue-fade;
         border-radius: 10px;
+
 
         .about-description {
           width: 50%;
+        }
+
+        .about-img {
+          img {
+            width: 500px;
+            border-radius: $border-radius;
+          }
         }
 
         h2 {
@@ -562,6 +570,12 @@ button, input, textarea {
             width: 100%;
             padding: 0 30px 30px 30px;
           }
+
+          .about-img {
+            img {
+              width: 350px;
+            }
+          }
         }
         .row-reverse {
           flex-direction: column-reverse;
@@ -569,7 +583,8 @@ button, input, textarea {
         
         }
         .row-not-reverse {
-          padding-right: 0;        }
+          padding-right: 0;        
+        }
       }
     }
   }
