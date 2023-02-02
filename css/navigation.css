@@ -1,22 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  z-index: 2;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Nunito Sans", sans-serif;
-  color: #3d3d3d;
-  font-size: 18px;
-  background-color: white;
-}
-
 ul {
   list-style-type: none;
 }
@@ -103,8 +84,8 @@ footer {
 }
 footer .container .row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
 }
 footer .container .row .about-company {
   display: flex;
@@ -117,6 +98,44 @@ footer .container .row .about-company h1 {
 }
 footer .container .row .about-company p {
   color: #f6f9fe;
+}
+footer .container .row .footer-services {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .row .footer-services h1 {
+  color: #f6f9fe;
+  font-size: 25px;
+}
+footer .container .row .footer-services p {
+  color: #f6f9fe;
+}
+footer .container .row .footer-blogs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .row .footer-blogs h1 {
+  color: #f6f9fe;
+  font-size: 25px;
+}
+footer .container .row .footer-blogs p {
+  color: #f6f9fe;
+}
+footer .container .row .footer-blogs .col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .container .row .footer-blogs .col .blog .featured-img img {
+  height: 50px;
+  width: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .container .row .footer-blogs .col .blog .summary p {
+  width: 300px;
 }
 footer .container .row .links {
   display: flex;
@@ -134,10 +153,6 @@ footer .container .row .links .footer-links {
 }
 footer .container .row .links .footer-links a {
   color: #f6f9fe;
-}
-footer .container p {
-  color: #f6f9fe;
-  padding-top: 15px;
 }
 footer .copy {
   background-color: #0937BB;
@@ -216,5 +231,10 @@ footer .copy .container .row .social-media img {
   }
   footer .copy .container .row .social-media {
     justify-content: start;
+  }
+}
+@media screen and (max-width: 1220px) {
+  footer .container {
+    padding: 0 30px;
   }
 }/*# sourceMappingURL=navigation.css.map */

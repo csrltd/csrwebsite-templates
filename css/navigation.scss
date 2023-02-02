@@ -4,23 +4,7 @@ $tex-color: #3d3d3d;
 $border-radius: 10px;
 $color-blue: #3461e2;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  z-index: 2;
-}
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: "Nunito Sans", sans-serif;
-  color: $tex-color;
-  font-size: 18px;
-  background-color: white;
-}
 //Refactored this
 
 ul {
@@ -115,9 +99,8 @@ footer {
     
     .row {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-
+      align-items: flex-start;
+      gap: 24px;
       .about-company {
         display: flex;
         flex-direction: column;
@@ -130,6 +113,58 @@ footer {
 
         p {
           color: $whitesmoke;
+        }
+        
+      }
+
+      .footer-services {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+          color: $whitesmoke;
+          font-size: 25px;
+        }
+
+        p {
+          color: $whitesmoke;
+        }
+      }
+
+      .footer-blogs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        h1 {
+          color: $whitesmoke;
+          font-size: 25px;
+        }
+
+        p {
+          color: $whitesmoke;
+        }
+        .col {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+         
+          .blog {
+            
+            .featured-img {
+              img {
+                height: 50px;
+                width: 50px;
+                object-fit:cover;
+              }
+            }
+            .summary {
+              p {
+                width: 300px;
+              }
+            }
+          }
         }
       }
       
@@ -153,10 +188,7 @@ footer {
         }
       }
     }
-    p {
-      color: $whitesmoke;
-      padding-top: 15px;
-    }
+    
   }
   .copy {
     background-color: #0937BB;
@@ -269,6 +301,17 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 1220px) {
+  footer {
+    .container {
+      padding: 0 30px;
+    }
+  }
+}
+
+
+
 
 
 
