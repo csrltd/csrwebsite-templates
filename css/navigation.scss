@@ -4,23 +4,7 @@ $tex-color: #3d3d3d;
 $border-radius: 10px;
 $color-blue: #3461e2;
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  z-index: 2;
-}
-html {
-  scroll-behavior: smooth;
-}
 
-body {
-  font-family: "Nunito Sans", sans-serif;
-  color: $tex-color;
-  font-size: 18px;
-  background-color: white;
-}
 //Refactored this
 
 ul {
@@ -58,6 +42,7 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-top: 20px;
       .brand {
         width: 400px;
         display: flex;
@@ -107,16 +92,16 @@ footer {
     }
   }
 }
-.footer {
-  width: 100%;
+footer {
+  // padding-top: 50px;
+  color: white;
   .container {
-    padding: 20px 50px;
-    .col {
+    
+    .row {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      .row {
+      align-items: flex-start;
+      gap: 24px;
+      .about-company {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -129,26 +114,108 @@ footer {
         p {
           color: $whitesmoke;
         }
+        
+      }
 
+      .footer-services {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h1 {
+          color: $whitesmoke;
+          font-size: 25px;
+        }
+
+        p {
+          color: $whitesmoke;
+        }
+      }
+
+      .footer-blogs {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        
+        h1 {
+          color: $whitesmoke;
+          font-size: 25px;
+        }
+
+        p {
+          color: $whitesmoke;
+        }
+        .col {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+         
+          .blog {
+            display: flex;
+            align-items: center;
+            .featured-img {
+              img {
+                height: 50px;
+                width: 50px;
+                object-fit: cover;
+              }
+            }
+            .summary {
+              p {
+                width: 300px;
+              }
+            }
+          }
+        }
+      }
+      
+      .links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         .social-media {
           display: flex;
           align-items: center;
           gap: 10px;
         }
-
+  
         .footer-links {
           display: flex;
           gap: 20px;
-
+  
           a {
             color: $whitesmoke;
           }
         }
       }
     }
-    p {
-      color: $whitesmoke;
-      padding-top: 15px;
+    
+  }
+  .copy {
+    background-color: #0937BB;
+    padding: 12px 0;
+    margin-top: 10px;
+    .container {
+
+      .row {
+        justify-content: space-between;
+        .menu-links {
+         display: flex;
+         align-items: center;
+         width: 70%;
+         gap: 12px;
+        }
+        .social-media {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          
+          gap: 12px;
+          img {
+            width: 24px;
+          }
+        }
+      }
     }
   }
 }
@@ -201,6 +268,64 @@ footer {
     }
   }
 }
+
+@media screen and(max-width: 540px) {
+  footer {
+    .container {
+      .row {
+        flex-direction: column;
+        gap: 50px;
+      }
+
+      .footer-blogs {
+        .col {
+          
+          .blog {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-direction: row;
+            padding: 12px 0;
+          }
+          .summary {
+            padding-left: 12px;
+          }
+        }
+      }
+    }
+
+    .copy{
+      margin-top: 50px;
+      padding:  20px 0;
+
+      .container {
+        .row {
+          flex-direction: column-reverse;
+          gap: 24px;
+          .menu-links {
+            flex-wrap: wrap;
+            width: 100%;
+          }
+
+          .social-media {
+            justify-content:start;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  footer {
+    .container {
+      padding: 0 30px;
+    }
+  }
+}
+
+
+
 
 
 
