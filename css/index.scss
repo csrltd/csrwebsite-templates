@@ -437,14 +437,14 @@ button, input, textarea {
 
       .row {
         width: 30%;
-        img {
-          height: 400px;
-        }
+        // img {
+        //   height: 400px;
+        // }
       }
       .map {
         margin-top: 5px;
         iframe {
-          width: 848px;
+          width: 800px;
           height: 400px;
         }
       }
@@ -533,7 +533,18 @@ button, input, textarea {
 }
 
 //responsiveness
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @media screen and(max-width: 540px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .hero {
     text-align: center;
     padding-top: 250px;
@@ -557,7 +568,6 @@ button, input, textarea {
       }
     }
   }
-
 
   //About Section
 
@@ -673,10 +683,11 @@ button, input, textarea {
 
         .map {
           width: 100%;
+          margin-top: 0;
 
           iframe {
             border-radius: 0 0 $border-radius $border-radius;
-            width: 500px;
+            width: 100%;
             top: 0;
           }
         }
@@ -709,6 +720,7 @@ button, input, textarea {
     }
   }
 }
+  
 
 @media screen and (max-width: 1096px) {
   .services-details {
@@ -718,13 +730,25 @@ button, input, textarea {
       }
     }
   }
+}
 
-  //contacts
+@media screen and (max-width: 810px) {
   .contacts {
     .container {
-      .col {
+      .location {
+        display: flex;
         flex-direction: column;
+
+        .map {
+          iframe {
+            width: 100%;
+          }
+        }
       }
     }
   }
 }
+
+
+
+

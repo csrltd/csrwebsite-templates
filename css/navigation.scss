@@ -93,7 +93,7 @@ footer {
   }
 }
 footer {
-  padding-top: 50px;
+  // padding-top: 50px;
   color: white;
   .container {
     
@@ -148,15 +148,16 @@ footer {
         .col {
           display: flex;
           flex-direction: column;
-          gap: 10px;
+          gap: 12px;
          
           .blog {
-            
+            display: flex;
+            align-items: center;
             .featured-img {
               img {
                 height: 50px;
                 width: 50px;
-                object-fit:cover;
+                object-fit: cover;
               }
             }
             .summary {
@@ -274,8 +275,21 @@ footer {
       .row {
         flex-direction: column;
         gap: 50px;
+      }
+
+      .footer-blogs {
         .col {
-          width: 100%;
+          
+          .blog {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-direction: row;
+            padding: 12px 0;
+          }
+          .summary {
+            padding-left: 12px;
+          }
         }
       }
     }
