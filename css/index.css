@@ -354,14 +354,11 @@ button, input, textarea {
 .contacts .container .location .row {
   width: 30%;
 }
-.contacts .container .location .row img {
-  height: 400px;
-}
 .contacts .container .location .map {
   margin-top: 5px;
 }
 .contacts .container .location .map iframe {
-  width: 848px;
+  width: 800px;
   height: 400px;
 }
 
@@ -426,7 +423,17 @@ button, input, textarea {
   right: -30px;
 }
 
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
 @media screen and (max-width: 540px) {
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
   .hero {
     text-align: center;
     padding-top: 250px;
@@ -511,10 +518,11 @@ button, input, textarea {
   }
   .contacts .container .location .map {
     width: 100%;
+    margin-top: 0;
   }
   .contacts .container .location .map iframe {
     border-radius: 0 0 10px 10px;
-    width: 500px;
+    width: 100%;
     top: 0;
   }
 }
@@ -533,7 +541,13 @@ button, input, textarea {
   .services-details .container .col {
     flex-wrap: wrap;
   }
-  .contacts .container .col {
+}
+@media screen and (max-width: 810px) {
+  .contacts .container .location {
+    display: flex;
     flex-direction: column;
+  }
+  .contacts .container .location .map iframe {
+    width: 100%;
   }
 }/*# sourceMappingURL=index.css.map */

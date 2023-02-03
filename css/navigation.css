@@ -79,7 +79,6 @@ footer {
 }
 
 footer {
-  padding-top: 50px;
   color: white;
 }
 footer .container .row {
@@ -126,7 +125,11 @@ footer .container .row .footer-blogs p {
 footer .container .row .footer-blogs .col {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
+}
+footer .container .row .footer-blogs .col .blog {
+  display: flex;
+  align-items: center;
 }
 footer .container .row .footer-blogs .col .blog .featured-img img {
   height: 50px;
@@ -214,8 +217,15 @@ footer .copy .container .row .social-media img {
     flex-direction: column;
     gap: 50px;
   }
-  footer .container .row .col {
-    width: 100%;
+  footer .container .footer-blogs .col .blog {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-direction: row;
+    padding: 12px 0;
+  }
+  footer .container .footer-blogs .col .summary {
+    padding-left: 12px;
   }
   footer .copy {
     margin-top: 50px;
